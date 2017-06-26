@@ -1,0 +1,14 @@
+#rio .headline {
+    color: #FFF;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: 0px 0px 20px #000;
+}
+#rio .headline h3 {
+    font-size: 17px;
+}
+
+#rio .headline h1 {
+    font-family: Georgia;
+    font-size: 65px;
+}

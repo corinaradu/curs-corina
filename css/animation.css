@@ -1,0 +1,6 @@
+@keyframes colorplay { 
+from {color: green;} to {color: yellow;}
+}
+@keyframes colorplay-ap {
+from {color: white;} to {color: red;}
+ }

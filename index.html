@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DEMO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./libs/bootstrap.min.css">
+  <link rel="stylesheet" href="./libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./libs/jquery.min.js"></script>
+  <script src="./libs/project.js"></script>
+  <script src="./libs/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="home" class="container-fluid">
+  <div id="header">
+  <button onclick="loadPosts()">Load posts</button>
+  <button onclick="setItem('Nume',', Geta!' )">Set</button>
+  <button onclick="getItem('Nume')">Get</button>      
+	  
+	  <div class="nav">
+          <ul class="menu-list">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./apartment.html">Apartment</a></li>
+              <li><a href="./rio.html">Rio</a></li>
+             <!--<li><a href="./contact.html">Contact</a></li>
+              <li><a href="./book.html">Book</a></li>-->
+          </ul>
+      </div>
+      <div class="headline">
+          <h3>BE MY GUEST</h3>
+          <h1 id="costum">Welcome to Rio</h1>
+      </div>
+  </div>
+  <div id="container">
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2 main-content">
+            <form id="search-form">
+                <ul>
+                    <li class="check-in">
+                        Check In:<br>
+                        <input type="date" name="check_in">
+                    </li>
+                    <li class="check-out">
+                        Check Out:<br>
+                        <input type="date" name="check_out">
+                    </li>
+                    <li class="adults">
+                        Adults:<br>
+                        <input type="number" name="adults">
+                    </li>
+                    <li class="kids">
+                        Kids:<br>
+                        <input type="number" name="kids">
+                    </li>
+                    <li class="search">
+                        <input type="submit"  name="search" value="Search">
+                    </li>
+                </ul>
+            </form>
+			<div id="postss"></div>
+			<div class="row">
+                        <div class="col-md-12 intro text-center">
+                            <h4>A Home in the Heart of the City</h4>
+							<hr>
+                            <p>
+                                Stay in a beautiful highrise in Ipanema just off the beach close to many world-class cafes and restaurants. Enjoy Bossa Nova with a cold beer!
+                            </p>
+                        </div>
+            </div>
+            <div class="posts">
+                <div class="post">
+                    <div class="row wide-image">
+                        <div class="col-md-4">
+                            <h4>Our Apartment</h4>
+                        </div>
+                        <img class="col-md-8" src="./static/our-apartment-wide.jpg" alt="Our living"/>
+                    </div>
+
+                    <div class="row wide-text">
+                            <img class="col-md-4" src="./static/our-apartment-small.jpg" alt="Our bedroom" />
+                            <div class="col-md-8">
+                                <p>
+                                The apartment is spacious with high ceilings, large windows, an open balcony and a beautiful view of the beach. Stay cool with central A/C and wind-down comfortably in the queen sized bedroom.
+                                </p>
+                                <a href="#">BOOK NOW</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="posts">
+                <div class="post">
+
+                    <div class="row wide-image">
+                        <img class="col-md-8" src="./static/location.jpg" alt="Our living"/>
+                        <div class="col-md-4">
+                            <h4>Location</h4>
+                        </div>
+                    </div>
+                    <div class="row wide-text">
+                            <div class="col-md-12">
+                                <p>
+                                Conveniently located just opposite Leblon Beach in Ipanema, our apartment will sweep you into the charm and excitements of Rio! Dine at one of our neighborhood’s many world-renowned restaurants, enjoy fresh-squeezed juices from one of the colourful stalls along the beach, and don’t miss live bossy-nova show in one of the local bars.
+                                </p>
+                                <a href="#">View Map</a>
+                            </div>
+                    </div>
+                    <div class="row wide-text">
+                            <img class="col-md-3" src="./static/camila.jpg" alt="Camila &amp; Tiago" />
+                            <div class="col-md-9 about-us">
+                                <h4>About Camila &amp; Tiago</h4>
+                                <p>
+                                Hi, my name is Camila and I’m a nutritionist from the south of Brazil. I moved to the beautiful Ipanema neighborhood two years ago with my husband, Tiago. We live in a homie highrise just off the Leblon Beach, but in the summer we travel!
+                                </p>
+                                <a href="#">Stay with us</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="footer">
+          <ul class="footer-list">
+              <li><a href="/contact.html">Contact us</a></li>
+              <li>Follow Us</li>
+              <li>Subscribe for Updates &amp; Offers</li>
+          </ul>    
+  </div>
+</div>
+</body>
+</html>
